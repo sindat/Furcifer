@@ -4,9 +4,11 @@ $(document).ready(function(){
 
         $.ajax({
             dataType: "json",
-            url: "localhost/API/youtubeToMp3",
+            // rename this depending on how you name the API file
+            url: "localhost/API/MOVETOYOURAPIFOLDER.js",
             success: function (ApiJsonObject){
                 // fetch stuff from the JSON
+                // contains stuff like where you wanna save it, quality of the video, thumbnail etc.
             }
         });
     });
