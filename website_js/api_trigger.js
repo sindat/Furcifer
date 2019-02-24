@@ -18,8 +18,12 @@ $(document).ready(function(){
             url: "http://localhost:3000/API/youtubetomp3/" + enteredVideoLink,
             success: function (ApiJsonObject){
                 console.log(ApiJsonObject);
-                // fetch stuff from the JSON
-                // contains stuff like where you wanna save it, quality of the video, thumbnail etc.
+                $('#appendToMe').append("<div id='songFound' class='col p-2 my-3 mx-1 text-center'><h1>" +
+                ApiJsonObject.videoTitle + "</h1>" +
+                "<img src='" + ApiJsonObject.videoThumbnail + "'class='img-fluid mx-auto d-block'>" +
+                "</div>");
+          
+                  
             }
         });
         

@@ -48,7 +48,7 @@ var downloaderOutput = {
       "videoTitle": "Casino Inc. - 13 X & Y",
       "artist": "Casino Inc.",
       "title": "X & Y",
-      "videoThumbnail": "https://img.youtube.com/vi/<insert-youtube-video-id-here>/default.jpg"
+      "videoThumbnail": "https://img.youtube.com/vi/U3p5jPCheEg/default.jpg"
    }  
 };
 
