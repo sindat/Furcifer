@@ -5,7 +5,7 @@ $(document).ready(function(){
         $.ajax({
             dataType: "json",
             // rename this depending on how you name the API file
-            url: "localhost/API/MOVETOYOURAPIFOLDER.js",
+            url: "/API/youtubetomp3",
             success: function (ApiJsonObject){
                 // fetch stuff from the JSON
                 // contains stuff like where you wanna save it, quality of the video, thumbnail etc.

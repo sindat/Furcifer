@@ -1,4 +1,4 @@
-# web-app-youtubetomp3
+# web-app-youtubetomp3 - ver 1.0.1
 Convert youtube videos to mp3 and download it. 
 
 #Guide on usage - example of running this on your personal apache web server
@@ -19,3 +19,7 @@ The API call you make fetches all the data that you specified in it, especially 
 
 Currently in testing phase, I will add an option to select where you want to save it, and the API call will just fetch the required data
 like the name, thumbnail, quality etc 
+
+Patch history
+
+1.0.1. - created the base express API structure, including routing, will be tested
