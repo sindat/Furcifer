@@ -1,4 +1,4 @@
-# web-app-youtubetomp3 - ver 1.0.1
+# web-app-youtubetomp3 - ver 1.0.2
 Convert youtube videos to mp3 and download it. 
 Uses sindats-youtube-mp3 npm package - REPO LINK HERE
 
@@ -24,3 +24,5 @@ like the name, thumbnail, quality etc
 # Patch history
 
 1.0.1. - created the base express API structure, including routing, will be tested, linked app to my npm sindats-youtube-mp3 package
+1.0.2. - API now responds with a JSONP object containing all the stuff I need about the video, front end works with the API - cuts the videoID from the full link that the user enters and performs an API call with ajax upon pressing enter, now only displaying the JSONP object in the console for testing, but the API works how I wanted it. 
+
