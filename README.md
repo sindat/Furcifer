@@ -1,8 +1,8 @@
 # web-app-youtubetomp3 - ver 1.0.2
 Convert youtube videos to mp3 and download it. 
-Uses sindats-youtube-mp3 npm package - REPO LINK HERE
+Uses sindats-youtube-mp3 npm package - https://github.com/sindat/youtubetomp3downloader
 
-# Guide on usage - example of running this on your personal apache web server
+# DEPRECATED - WILL BE UPDATED - Guide on usage - example of running this on your personal apache web server
 
 1) open up git command line
 2) cd into [your apache folder]/htdocs
