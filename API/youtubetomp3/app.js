@@ -14,7 +14,7 @@ Bootup : A set of statements that starts the server and makes it listen on a spe
  */
 
 // DEPENDENCIES
-var youtubetomp3 = require('sindats-youtube-mp3'),
+var youtubetomp3 = require('sindats-youtube-mp3'), // this is the main code 
    express = require('express'),
    path = require('path'),
    logger = require('morgan'),
@@ -26,7 +26,7 @@ var app = express();
 var router = express.Router();
 
 // CONFIGURATIONS
-app.set('view engine', 'jade'); //default
+app.set('view engine', 'pug'); //default
 app.set('port', process.env.PORT || 3000);
 
 // MIDDLEWARE
@@ -34,23 +34,30 @@ app.use(logger('combined'));
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 //app.use(express.static('public'));
 
-// this is what the generated .json object will look like
-// it will be generated using the video ID parameter from the client
-// now manually setting the file save path, but later will make a classic popup window with file save prompt
+/************************************
+ * this is what the generated .json object will look like
+ *  it will be generated using the video ID parameter from the client
+ * now manually setting the file save path, but later will make a classic popup window with file save prompt
+ * this object has to be generated in this format by the underlying code 
+************************************/
 var downloaderOutput = {
-   "videoID": "U3p5jPCheEg",
-   "fileName": "C:\Users\davos\Music\Casino Inc. - 13 X & Y", 
-   "videoUrl": "https://www.youtube.com/watch?v=U3p5jPCheEg",
-   "videoTitle": "Casino Inc. - 13 X & Y",
-   "artist": "Casino Inc.",
-   "title": "X & Y",
-   "videoThumbnail": "https://img.youtube.com/vi/<insert-youtube-video-id-here>/default.jpg"
+   "U3p5jPCheEg": {
+      "videoID": "U3p5jPCheEg",
+      "fileName": "C:\Users\davos\Music\Casino Inc. - 13 X & Y", 
+      "videoUrl": "https://www.youtube.com/watch?v=U3p5jPCheEg",
+      "videoTitle": "Casino Inc. - 13 X & Y",
+      "artist": "Casino Inc.",
+      "title": "X & Y",
+      "videoThumbnail": "https://img.youtube.com/vi/<insert-youtube-video-id-here>/default.jpg"
+   }  
 };
 
 // ROUTES
 app.get('/API/youtubetomp3/:videoID', function(request, response, next){
-   //var videoID = request.params.videoID;
-   response.render(downloaderOutput[videoTitle]);
+   var videoID = request.params.videoID;
+   //response.render('videodata', downloaderOutput[videoID]);
+   // THIS IS THE JSON OBJECT BEING RETURNED 
+   response.jsonp(downloaderOutput[videoID]);
 });
 
 // BOOTUP
