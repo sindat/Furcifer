@@ -11,6 +11,7 @@ $(document).ready(function(){
         }
         //console.log(enteredVideoLink);
 
+        
         // THE AJAX CALL FOR MY API
         $.ajax({
             dataType: "jsonp",
@@ -18,14 +19,13 @@ $(document).ready(function(){
             url: "http://localhost:3000/API/youtubetomp3/" + enteredVideoLink,
             success: function (ApiJsonObject){
                 console.log(ApiJsonObject);
-                $('#appendToMe').append("<div id='songFound' class='col p-2 my-3 mx-1 text-center'><h1>" +
-                ApiJsonObject.videoTitle + "</h1>" +
-                "<img src='" + ApiJsonObject.videoThumbnail + "'class='img-fluid mx-auto d-block'>" +
-                "</div>");
-          
-                  
+                
             }
         });
         
+       
+        
+        
+        });
+        
     });
-});

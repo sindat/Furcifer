@@ -1,28 +1,37 @@
-# web-app-youtubetomp3 - ver 1.0.2
-Convert youtube videos to mp3 and download it. 
+# web-app-youtubetomp3 
+
+## What's this?
+
+Get mp3 from youtube videos by entering a link.  
+<br/>
 Uses sindats-youtube-mp3 npm package - https://github.com/sindat/youtubetomp3downloader
 
-# DEPRECATED - WILL BE UPDATED - Guide on usage - example of running this on your personal apache web server
+## How it works
 
-1) open up git command line
-2) cd into [your apache folder]/htdocs
-3) git clone https://github.com/sindat/web-app-youtubetomp3/
-4) make a folder where you will place the API code 
-5) download nodeJS if you havent already 
-6) open the npm command line
-7) cd into the API folder that youve created within the npm command line and type npm install sindats-mp3-downloader --save
-8) move the MOVETOYOURAPIFOLDER.js to your API folder and name it how you want, this will be the file used in the API call
-9) specify the name of that file in your API call in the api_trigger.js
+Website.js contains the HTTP call for the API, which is stored in ./API .  
+<br/>
 
-# How it works
+The API contains app.js - it is an ExpressJS app, which creates an instance of a function 
+pulled from the npm package's library.
 
-The API call you make fetches all the data that you specified in it, especially where you will save the converted mp3 file. 
+## How to set it up
 
-Currently in testing phase, I will add an option to select where you want to save it, and the API call will just fetch the required data
-like the name, thumbnail, quality etc 
+In app.js, enter the parameters the function requires. It required **3 parameters** :  
+* location of the ffmpeg binary - you need to download ffmpeg (it's the converter)
+* location where you want to save the file
+* an API key for the Youtube API
 
-# Patch history
+<br/>
 
-1.0.1. - created the base express API structure, including routing, will be tested, linked app to my npm sindats-youtube-mp3 package
-1.0.2. - API now responds with a JSONP object containing all the stuff I need about the video, front end works with the API - cuts the videoID from the full link that the user enters and performs an API call with ajax upon pressing enter, now only displaying the JSONP object in the console for testing, but the API works how I wanted it. 
+Additionally, you need:
+* nodeJS to run the app.js
+* an apache server to run this app on localhost
 
+<br/>
+
+## Looks like too many requirements?
+
+Yep. Cause it's not finished yet lol, here's what I will implement as time passes by:
+* I will publish the site on a public domain - probably banter.cz
+* I will fix the front end - currently it's broken and only takes your youtube video link and nothing else 
+* I will make a popup save file prompt so you dont have to manually enter anything 
