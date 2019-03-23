@@ -37,7 +37,7 @@ app.set('port', process.env.PORT || 3000);
  * now manually setting the file save path, but later will make a classic popup window with file save prompt
  * this object has to be generated in this format by the underlying code 
 ************************************/
-var downloaderOutput = {
+/*var downloaderOutput = {
    "U3p5jPCheEg": {
       "videoID": "U3p5jPCheEg",
       "fileName": "C:\Users\davos\Music\Casino Inc. - 13 X & Y", 
@@ -48,6 +48,7 @@ var downloaderOutput = {
       "videoThumbnail": "https://img.youtube.com/vi/U3p5jPCheEg/default.jpg"
    }  
 };
+*/
 
 
 // ROUTES
@@ -68,10 +69,10 @@ app.get('/API/youtubetomp3/:videoID', function(request, response, next){
    
    
    var DOWNLOADER = new youtubetomp3({
-      "apiKey" : "",
-      "ffmpegPath": "C:/ffmpeg/bin/ffmpeg",        
+      "apiKey" : "AIzaSyC-eBlpk6ksj-x9KWdje0nVHBue-U-T5_k",
+      "ffmpegPath": "/usr/bin/ffmpeg",        
       // will be specified later by the user - file save popup window etc 
-      "fileSavePath": "C:/Users/davos/music/youtubetomp3test/"
+      "fileSavePath": "/home/sindat/Music/"
    });
 
    
@@ -79,8 +80,9 @@ app.get('/API/youtubetomp3/:videoID', function(request, response, next){
    
    
    // perform the download 
-   DOWNLOADER.download(videoID, function(returnedJson){
-      console.log(returnedJson);
+   DOWNLOADER.download(videoID, function(message){
+      console.log(message);
+      response.jsonp(message);
    });
 
       
