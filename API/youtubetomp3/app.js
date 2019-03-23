@@ -69,7 +69,7 @@ app.get('/API/youtubetomp3/:videoID', function(request, response, next){
    
    
    var DOWNLOADER = new youtubetomp3({
-      "apiKey" : "AIzaSyC-eBlpk6ksj-x9KWdje0nVHBue-U-T5_k",
+      "apiKey" : "",
       "ffmpegPath": "/usr/bin/ffmpeg",        
       // will be specified later by the user - file save popup window etc 
       "fileSavePath": "/home/sindat/Music/"
