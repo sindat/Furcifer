@@ -1,5 +1,13 @@
 # web-app-youtubetomp3 
 
+## April Update
+
+Not going to work on this further since the implementation of this project might lead to legal issues (downloading copyrighted music).  
+
+## What can this do?  
+
+Convert a youtube video to an .mp3 after providing the full video link - you have to manually specify a couple things, via notes below.
+
 ## What's this?
 
 Get mp3 from youtube videos by entering a link.  
