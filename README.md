@@ -1,8 +1,8 @@
-# web-app-youtubetomp3 
+# Furcifer - the YoutubeToMp3 downloader
 
-## April Update
+## May Update
 
-Not going to work on this further since the implementation of this project might lead to legal issues (downloading copyrighted music).  
+Revamping this project for Cloud depployment and incorporated AI.
 
 ## What can this do?  
 
@@ -11,18 +11,19 @@ Convert a youtube video to an .mp3 after providing the full video link - you hav
 ## What's this?
 
 Get mp3 from youtube videos by entering a link.  
-<br/>
-Uses sindats-youtube-mp3 npm package - https://github.com/sindat/youtubetomp3downloader
 
-## How it works
+## Base structure 
 
-Website.js contains the HTTP call for the API, which is stored in ./API .  
-<br/>
+Website.js contains the API call code. The rest is Frontend stuff.  
 
-The API contains app.js - it is an ExpressJS app, which creates an instance of a function 
-pulled from the npm package's library.
+API uses ExpressJS routing.  
 
-## How to set it up
+## Where is the code ?  
+
+The class definition and functions are all pulled from my npm package, which needs to be installed via npm.  
+Link - https://github.com/sindat/youtubetomp3downloader  
+
+## How to set it up - will be automatized with Docker  
 
 In app.js, enter the parameters the function requires. It required **3 parameters** :  
 * location of the ffmpeg binary - you need to download ffmpeg (it's the converter)
