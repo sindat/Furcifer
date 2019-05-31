@@ -1,5 +1,7 @@
 # Furcifer - the YoutubeToMp3 downloader
 
+![titleImage](https://www.madcham.de/wp-content/uploads/2014/09/ambanja6_neu.jpg)
+
 ## May Update
 
 Revamping this project for Cloud depployment and incorporated AI.
