@@ -20,7 +20,7 @@ Website.js contains the API call code. The rest is Frontend stuff.
 
 API uses ExpressJS routing.  
 
-## Where is the code ?  
+## Where is the main code ?  
 
 The class definition and functions are all pulled from my npm package, which needs to be installed via npm.  
 Link - https://github.com/sindat/youtubetomp3downloader  
