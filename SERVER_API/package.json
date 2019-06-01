@@ -1,0 +1,23 @@
+{
+  "name": "furcifer-api",
+  "version": "1.0.0",
+  "description": "the API of Furcifer, a youtubetomp3 downloader.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sindat/Furcifer.git"
+  },
+  "author": "David Vondrovic (sindat)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sindat/Furcifer/issues"
+  },
+  "homepage": "https://github.com/sindat/Furcifer#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "sindats-youtube-mp3": "^1.3.1"
+  }
+}
