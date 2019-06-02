@@ -47,32 +47,6 @@ class MP3DOWNLOADER{
 
 
 
-
-
-
-
-
-
-
-            /************************************
-             * TESTS - DEBUGGING ISSUES WITH REQUEST RETURNING UNDEFINED OBJECT 
-             * ***************************************/
-
-            //console.log(jsonObject.body);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             // INITIALIZE ALL VARIABLES THAT ARE GOING TO BE SENT TO THE FRONT END 
             // THOSE WILL BE PASSED INTO THE CALLBACK OF THE download() FUNCTION AS A .json OBJECT
             let videoTitle = jsonObject.body.items[0].snippet.title;

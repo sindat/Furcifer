@@ -42,6 +42,7 @@ app.get('/API/youtubetomp3/:videoID', function(request, response){
    DOWNLOADER.download(videoID, function(returnedJsonObject){
       console.log(returnedJsonObject);
       response.jsonp(returnedJsonObject);
+      console.log("File succesfully saved on disk.");
    });  
 
 

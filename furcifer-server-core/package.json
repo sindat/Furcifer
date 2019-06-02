@@ -1,6 +1,6 @@
 {
   "name": "furcifer-server-core",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "core of the Furcifer youtubetomp3 downloader contains class and function definitions",
   "main": "app.js",
   "scripts": {
