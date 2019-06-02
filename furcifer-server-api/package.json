@@ -1,0 +1,14 @@
+{
+  "name": "furcifer-server-api",
+  "version": "1.0.0",
+  "description": "API server for the Furcifer youtubetomp3 app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Vondrovic (sindat)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

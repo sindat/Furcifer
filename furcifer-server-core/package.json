@@ -1,0 +1,11 @@
+{
+  "name": "furcifer-server-core",
+  "version": "1.0.0",
+  "description": "core of the Furcifer youtubetomp3 downloader contains class and function definitions",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Vondrovic (sindat)",
+  "license": "ISC"
+}
