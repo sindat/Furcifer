@@ -14,7 +14,7 @@ Bootup : A set of statements that starts the server and makes it listen on a spe
  */
 
 // DEPENDENCIES
-const youtubetomp3 = require('sindats-youtube-mp3'); // this is the main code 
+const youtubetomp3 = require('furcifer-server-core'); // this is the main code 
 const express = require('express');
 
 // INSTANTIATIONS

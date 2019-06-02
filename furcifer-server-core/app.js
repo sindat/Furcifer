@@ -26,13 +26,15 @@ class MP3DOWNLOADER{
         // TELL ffmpeg WHERE IS THE ffmpeg BINARY 
         ffmpeg.setFfmpegPath(this.ffmpegPath);
 
+
         
+    
         // YOUTUBE API CALL WHICH PROVIDES ALL NECCESSARY DATA ABOUT THE VIDEO BEING DOWNLOADED 
         request('https://www.googleapis.com/youtube/v3/videos?part=id%2C+snippet&id=' + videoID + '&key=' + this.apiKey, 
         {json:true}, 
         (error, jsonObject) => {
             
-
+            
             
 
             // API FAILS TO RETRIEVE DATA - MIGHT BE DUE TO A WRONG KEY OR CONNECTION ISSUES
@@ -40,6 +42,31 @@ class MP3DOWNLOADER{
             if (error){
                 console.log(error);
             }
+
+
+
+
+
+
+
+
+
+
+
+
+            /************************************
+             * TESTS - DEBUGGING ISSUES WITH REQUEST RETURNING UNDEFINED OBJECT 
+             * ***************************************/
+
+            //console.log(jsonObject.body);
+
+
+
+
+
+
+
+
 
 
 
@@ -99,22 +126,23 @@ class MP3DOWNLOADER{
                         returnedVideoInfoObject.fileSavePath = this.fileSavePath;
 
                         callback(returnedVideoInfoObject)
-                    })
-                })
+                    });
+                });
             });
-        })
-    }
-}
+        });
+    };
+};
 
 
 /* 
     TESTS
 */
 
+/*
 const theDownloader = new MP3DOWNLOADER({
     fileSavePath : "C:/Users/i506417/Music/",
     ffmpegPath : "C:/ffmpeg/bin/ffmpeg.exe",
-    apiKey : ""
+    apiKey : "AIzaSyC-eBlpk6ksj-x9KWdje0nVHBue-U-T5_k"
 });
 
 
@@ -124,7 +152,7 @@ theDownloader.download("16uDoya2rfQ", function(videoInfoObject){
 });
 
 
-
+*/
    
 
 module.exports = MP3DOWNLOADER;

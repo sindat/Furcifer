@@ -1,11 +1,16 @@
 {
   "name": "furcifer-server-core",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "core of the Furcifer youtubetomp3 downloader contains class and function definitions",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "David Vondrovic (sindat)",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "fluent-ffmpeg": "^2.1.2",
+    "request": "^2.88.0",
+    "ytdl-core": "^0.29.2"
+  }
 }
