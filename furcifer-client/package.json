@@ -1,0 +1,14 @@
+{
+  "name": "furcifer-client",
+  "version": "1.0.0",
+  "description": "The client side of Furcifer. Contains various operations like writing to file and calling the Furcifer API",
+  "main": "index.html ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Vondrovic (sindat)",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security"
+  }
+}

@@ -1,5 +1,21 @@
-Artist,Song,Genre,Album,ReleaseDate
-Above & Beyond,Sun & Moon,Trance,Group Therapy,2011
-Hardwell,Cobra,Trance,I Am Hardwell,2013
-Shogun,Save Me,Dance/Electronic,,2010
-Chicane,What Am I Doing Here,Dance/Electronic,Giants,2010
+GENDER,AGE,OCCUPATION,DOWNLOAD_PURPOSE,RELATIONSHIP_STATUS,TIMELINE_AND_GENRE
+Male,21,Computers and Technology,Workout,Single,00s Dance
+Female,45,Hospitality Tourism and the Service Industry,Relaxing,Married,60s Jazz
+Male,39,Law and Law Enforcement,Romance,Married,90s Indie
+Female,12,Unemployed,Dancing,Single,00s Pop
+Male,84,Science,Relaxing,Divorced,60s Blues
+Male,56,Law and Law Enforcement,Working,Married,90s Electro
+Male,49,Government,Working,Divorced,80s Electro
+Male,43,Law and Law Enforcement,Travelling,Married,70s Country
+Female,23,Arts and Communications,Workout,Single,00s Pop
+Male,43,Science,Sleeping,Divorced,90s Indie
+Female,77,Unemployed,Eating,Widowed,70s Country
+Male,6,Unemployed,Gaming,Single,00s Dubstep
+Male,90,Science,Relaxing,Single,70s Rock
+Female,76,Arts and Communications,Relaxing,Divorced,60s Blues
+Male,64,Trades and Transportation,Eating,Widowed,70s Country
+Male,21,Computers and Technology,Gaming,Single,00s Dance
+Female,23,Arts and Communications,Dancing,Single,00s Pop
+Female,45,Hospitality Tourism and the Service Industry,Romance,Married,60s Jazz
+Male,49,Government,Working,Divorced,80s Electro
+Male,43,Science,Sleeping,Divorced,90s Indie
